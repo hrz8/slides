@@ -44,7 +44,7 @@ const isReal = computed(() => props.verdict === 'REAL')
           <span v-if="flag" :class="flag === 'my' ? 'i-twemoji-flag-malaysia' : 'i-twemoji-flag-indonesia'" class="text-2xl" />
         </div>
         <div v-if="image" class="front-media">
-          <img :src="image" alt="" class="front-img" :style="imageBlur ? { filter: `blur(${imageBlur}px)`, transform: 'scale(1.08)' } : undefined">
+          <img :src="image" alt="" class="front-img" :style="imageBlur ? { filter: `blur(${imageBlur}px) grayscale(1) brightness(0.8)`, transform: 'scale(1.08)' } : undefined">
           <span v-if="play" class="play i-carbon-play-filled-alt" />
         </div>
         <div class="flex-1 flex items-center justify-center text-center leading-snug" :class="{ 'caption': image }">
