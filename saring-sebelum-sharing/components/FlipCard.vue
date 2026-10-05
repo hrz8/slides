@@ -29,6 +29,15 @@ const props = withDefaults(defineProps<{
   flipped: false,
 })
 
+// Root-relative paths ("/assets/...") need the deploy base, e.g. /slides/<deck>/ on GitHub Pages
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+const withBase = (url?: string) => (url?.startsWith('/') && !url.startsWith('//') ? base + url : url)
+const img = computed(() => withBase(props.image))
+const backImg = computed(() => withBase(props.backImage))
+const link = computed(() => withBase(props.href))
+const viewLink = computed(() => withBase(props.viewHref))
+const extraLink = computed(() => withBase(props.extraHref))
+
 // Manual click toggles locally (handy when rehearsing)
 const manual = ref(false)
 const isFlipped = computed(() => props.flipped !== manual.value)
@@ -44,7 +53,7 @@ const isReal = computed(() => props.verdict === 'REAL')
           <span v-if="flag" :class="flag === 'my' ? 'i-twemoji-flag-malaysia' : 'i-twemoji-flag-indonesia'" class="text-2xl" />
         </div>
         <div v-if="image" class="front-media">
-          <img :src="image" alt="" class="front-img" :style="imageBlur ? { filter: `blur(${imageBlur}px) grayscale(1) brightness(0.8)`, transform: 'scale(1.08)' } : undefined">
+          <img :src="img" alt="" class="front-img" :style="imageBlur ? { filter: `blur(${imageBlur}px) grayscale(1) brightness(0.8)`, transform: 'scale(1.08)' } : undefined">
           <span v-if="play" class="play i-carbon-play-filled-alt" />
         </div>
         <div class="flex-1 flex items-center justify-center text-center leading-snug" :class="{ 'caption': image }">
@@ -52,7 +61,7 @@ const isReal = computed(() => props.verdict === 'REAL')
         </div>
         <div class="text-sm flex items-center gap-2">
           <span class="opacity-60 flex items-center gap-1"><span class="i-twemoji-thinking-face" /> Real or fake?</span>
-          <a v-if="viewHref" :href="viewHref" target="_blank" rel="noopener" class="view" @click.stop>Open ↗</a>
+          <a v-if="viewHref" :href="viewLink" target="_blank" rel="noopener" class="view" @click.stop>Open ↗</a>
         </div>
       </div>
       <div class="face back" :class="isReal ? 'is-real' : 'is-fake'">
@@ -60,14 +69,14 @@ const isReal = computed(() => props.verdict === 'REAL')
           <span :class="isReal ? 'i-carbon-checkmark-filled' : 'i-carbon-close-filled'" />
           {{ verdict }}
         </div>
-        <a v-if="backImage && href" :href="href" target="_blank" rel="noopener" class="back-link" @click.stop>
-          <img :src="backImage" alt="" class="back-img">
+        <a v-if="backImage && href" :href="link" target="_blank" rel="noopener" class="back-link" @click.stop>
+          <img :src="backImg" alt="" class="back-img">
         </a>
-        <img v-else-if="backImage" :src="backImage" alt="" class="back-img">
+        <img v-else-if="backImage" :src="backImg" alt="" class="back-img">
         <div class="reason">{{ reason }}</div>
         <div class="flex gap-3">
-          <a v-if="href" :href="href" target="_blank" rel="noopener" class="source" @click.stop>Source ↗</a>
-          <a v-if="extraHref" :href="extraHref" target="_blank" rel="noopener" class="source" @click.stop>{{ extraLabel || 'More ↗' }}</a>
+          <a v-if="href" :href="link" target="_blank" rel="noopener" class="source" @click.stop>Source ↗</a>
+          <a v-if="extraHref" :href="extraLink" target="_blank" rel="noopener" class="source" @click.stop>{{ extraLabel || 'More ↗' }}</a>
         </div>
       </div>
     </div>

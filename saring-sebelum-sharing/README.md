@@ -19,8 +19,11 @@ pnpm dev            # http://localhost:3030
 | URL | What |
 |---|---|
 | `http://localhost:3030/` | Slides (share this window/tab in the video call) |
-| `http://localhost:3030/presenter/` | Presenter view: notes, timer, next slide |
-| `http://localhost:3030/overview/` | All slides at a glance |
+| `http://localhost:3030/#/presenter/1` | Presenter view: notes, timer, next slide |
+| `http://localhost:3030/#/overview` | All slides at a glance |
+
+Live: https://hrz8.github.io/slides/saring-sebelum-sharing/ (presenter: `…/#/presenter/1`).
+URLs use hash routing (`#/5`), so links work on GitHub Pages.
 
 ## Presenting (hybrid)
 
@@ -55,7 +58,8 @@ Exports use `playwright-chromium` (installed as a dev dependency).
 
 ### Deploy
 
-`netlify.toml` and `vercel.json` live in this folder, so each deck is its own site:
+Deployed automatically to GitHub Pages on push to `main` (see the root `README.md`).
+Alternatively, `netlify.toml` and `vercel.json` live in this folder, so the deck can be its own site:
 
 - **Netlify:** set *Base directory* to `saring-sebelum-sharing` (publish `dist`, command `pnpm build`).
 - **Vercel:** set *Root Directory* to `saring-sebelum-sharing`.

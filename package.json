@@ -9,6 +9,7 @@
   "scripts": {
     "dev:saring": "pnpm -F saring-sebelum-sharing dev",
     "build:saring": "pnpm -F saring-sebelum-sharing build",
-    "build:all": "pnpm -r build"
+    "build:all": "pnpm -r build",
+    "build:pages": "node scripts/build-pages.mjs"
   }
 }
