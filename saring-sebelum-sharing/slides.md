@@ -12,6 +12,8 @@ fonts:
   mono: JetBrains Mono
   provider: google
 transition: slide-left
+# hash URLs (/#/5) so deep links work on GitHub Pages, which has no per-deck SPA fallback
+routerMode: hash
 mdc: true
 lineNumbers: false
 duration: 14min
