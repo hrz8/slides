@@ -1,0 +1,42 @@
+{
+  "my-anwar": {
+    "id": "my-anwar",
+    "url": "https://incidentdatabase.ai/entities/anwar-ibrahim/",
+    "page_title": "Entity: Anwar Ibrahim",
+    "passage": "Purported AI-generated deepfake videos depicting Malaysia's Prime Minister Anwar Ibrahim and other officials, political leaders, and business leaders have reportedly been used to promote fraudulent investment schemes. A total of 13,956 cases were reported last year, with RM2.11 billion allegedly lost to these scams. Victims were allegedly misled by hyper-realistic fake endorsements circulated via Facebook, WhatsApp, and Telegram. Scammers allegedly adapt quickly, generating new deepfakes when content is removed.",
+    "image": "assets/screenshots/my-anwar.png",
+    "captured_at": "2026-10-05T03:36:36+00:00"
+  },
+  "id-prabowo": {
+    "id": "id-prabowo",
+    "url": "https://www.hukumonline.com/berita/a/deepfake-menyebar-cepat--hukum-bergerak-lambat-lt68f065103ad53",
+    "page_title": "Deepfake Menyebar Cepat, Hukum Bergerak Lambat",
+    "passage": "Januari 2025, Bareskrim Polri menangkap AMA di Lampung Tengah. Pelaku menggunakan video deepfake menampilkan wajah dan suara Presiden Prabowo Subianto seolah-olah menawarkan bantuan sosial pemerintah. Ratusan korban dari 20 provinsi tertipu, dengan kerugian mencapai puluhan juta rupiah. AMA dijerat UU ITE dengan ancaman 12 tahun penjara dan denda Rp12 miliar.",
+    "image": "assets/screenshots/id-prabowo.png",
+    "captured_at": "2026-10-05T03:36:55+00:00"
+  },
+  "my-jpj": {
+    "id": "my-jpj",
+    "url": "https://utusanmelayuplus.com/jpj-nafi-video-kononnya-petugas-bergaduh-dengan-pelanggan-dipercayai-dijana-ai/",
+    "page_title": "JPJ nafi video kononnya petugas bergaduh dengan pelanggan, dipercayai dijana AI - UtusanMelayuPlus",
+    "passage": "Ketua Pengarah Pengangkutan Jalan, Datuk Aedy Fadly Ramli berkata, video yang dimuat naik menerusi akaun TikTok Irfan Zaky @silento_91 itu mengandungi dakwaan tidak benar yang boleh mengelirukan masyarakat.",
+    "image": "assets/screenshots/my-jpj.png",
+    "captured_at": "2026-10-05T03:35:40+00:00"
+  },
+  "my-sara": {
+    "id": "my-sara",
+    "url": "https://www.thevibes.com/articles/news/112204/rm100-sara-aid-via-mykad-begins-nationwide-distribution",
+    "page_title": "RM100 SARA Aid via MyKad begins nationwide distribution | Malaysia | The Vibes",
+    "passage": "STARTING today, a one-off RM100 credit under the Sumbangan Asas Rahmah (SARA) scheme is being distributed to all eligible adult Malaysians via their MyKad, with the amount usable at over 4,100 participating outlets nationwide until 31 December 2025.",
+    "image": "assets/screenshots/my-sara.png",
+    "captured_at": "2026-10-05T03:36:01+00:00"
+  },
+  "id-srimulyani": {
+    "id": "id-srimulyani",
+    "url": "https://ekonomi.republika.co.id/berita/t18wf6409/sri-mulyani-bantah-sebut-guru-beban-negara-cap-video-viral-hoaks-hasil-deepfake",
+    "page_title": "Sri Mulyani Bantah Sebut Guru Beban Negara, Cap Video Viral Hoaks Hasil Deepfake | Republika Online",
+    "passage": "“Faktanya, saya tidak pernah menyatakan bahwa guru sebagai beban negara. Video tersebut adalah hasil deepfake dan potongan tidak utuh dari pidato saya dalam Forum Konvensi Sains, Teknologi, dan Industri Indonesia di ITB pada 7 Agustus lalu,” lanjutnya.",
+    "image": "assets/screenshots/id-srimulyani.png",
+    "captured_at": "2026-10-05T03:37:44+00:00"
+  }
+}

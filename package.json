@@ -1,0 +1,28 @@
+{
+  "name": "saring-sebelum-sharing",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "dev:remote": "slidev --remote",
+    "build": "slidev build",
+    "preview": "npx serve dist",
+    "export:pdf": "slidev export --format pdf --output exports/saring-sebelum-sharing.pdf",
+    "export:pdf:clicks": "slidev export --format pdf --with-clicks --output exports/saring-sebelum-sharing-steps.pdf",
+    "export:pptx": "slidev export --format pptx --with-clicks --output exports/saring-sebelum-sharing.pptx",
+    "export:notes": "slidev export-notes --output exports/speaker-notes.pdf",
+    "capture:sources": "uv run scripts/capture_sources.py"
+  },
+  "dependencies": {
+    "@slidev/cli": "^53.0.0",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "^0.25.0",
+    "qrcode": "^1.5.4",
+    "vue": "^3.5.33"
+  },
+  "devDependencies": {
+    "@iconify-json/mdi": "^1.2.3",
+    "@iconify-json/twemoji": "^1.2.5",
+    "playwright-chromium": "^1.63.0"
+  }
+}
