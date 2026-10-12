@@ -48,11 +48,13 @@ layout: center
 </div>
 
 <!--
-[0:00 → 0:15] TITLE — 15 sec
+**⏱ 0:00 → 0:15 · 15 sec** · *Smile, wave at the camera too.*
 
-- Quick hello to office + remote folks.
-- "Saring sebelum sharing" works in both BM and BI — that's the whole talk in four words.
-- Don't linger: go straight into the game.
+Selamat pagi, everyone! Hi to everyone in the office, and hi to everyone joining remotely. *(wave at camera)*
+
+Today's talk is four words long: **saring sebelum sharing**. Works in Bahasa Malaysia, works in Bahasa Indonesia. Filter before you forward.
+
+But first: a game.
 -->
 
 ---
@@ -78,11 +80,15 @@ transition: fade-out
 <p class="mt-8 text-muted" v-click>No Googling. Gut feeling only. <span class="i-twemoji-eyes"></span></p>
 
 <!--
-[0:15 → 0:30] HOOK INTRO — 15 sec
+**⏱ 0:15 → 0:30 · 15 sec**
 
-- Cross-country twist: you vote on the OTHER country's items, so nobody has local context.
-- That's the point: without context, everyone is guessing.
-- Remote folks: poll link will be in the chat.
+Quick game: real or fake? I'll show you four things that went viral, two from Malaysia, two from Indonesia.
+
+[click] Here's the twist. Indonesian friends: you judge the **Malaysian** ones.
+
+[click] Malaysian friends: you judge the **Indonesian** ones. So nobody gets the home advantage.
+
+[click] Rules: no Googling. *(look at the camera)* Remote team, I can see you opening a new tab. Gut feeling only!
 -->
 
 ---
@@ -101,16 +107,19 @@ clicks: 0
 <p class="mt-4 text-center text-muted">Pick A, B, C, D: which ones are <span class="text-real">real</span>?</p>
 
 <!--
-[0:30 → 1:15] SHOW ITEMS — 45 sec
+**⏱ 0:30 → 1:15 · 45 sec** · *~10 sec per card. "Open ↗" opens the item (A, B, D). C has no copy online, so just describe it.*
 
-- Walk through each card in ~10 sec. Indonesians judge A + C (MY), Malaysians judge B + D (ID).
-- "Open ↗" on A, B and D opens the item (A: The Vibes article; B: the viral Instagram reel (local copy, no "hoaks" title anywhere; 25 sec, plays in a new tab); D: the "news" page that published the coin story).
-- C has no copy online (the TikTok was taken down after the MCMC report). Just describe it.
-- On the reveal, card B also has "Real speech ▶": Kompas TV's full ITB speech (7 Aug 2025), the footage the deepfake was cut from.
-- A (MY, headline): RM100 on every adult's MyKad, no application. Sounds exactly like a "free money" scam, but it's REAL.
-- B (ID, video): clip of Finance Minister Sri Mulyani saying teachers are a burden on the state. Went viral Aug 2025.
-- C (MY, video): TikTok clip of a customer arguing at a JPJ counter. Describe it; optional: play the clip if you saved it.
-- D (ID, image): "true story" photo of a man arrested for hoarding coins in water gallons.
+Okay, four items. Look carefully.
+
+**A, Malaysia.** "Every Malaysian adult gets RM100 credited to their MyKad. No application needed." Free money from the government, straight to your IC. Hmm.
+
+**B, Indonesia.** A clip of Finance Minister Sri Mulyani saying *"guru itu beban negara"*, teachers are a burden on the state. *(optional: click "Open ↗" and play a few seconds, then close the tab)*
+
+**C, Malaysia.** A TikTok from a JPJ office. A customer is furious: "Only one counter open, staff still on break!" Over twenty-eight thousand likes.
+
+**D, Indonesia.** "Kisah nyata", a true story: a man arrested by police for hoarding coins in water gallons. There's even a photo.
+
+So: which of these are **real**? Don't tell me yet. Next slide.
 -->
 
 ---
@@ -124,11 +133,15 @@ layout: center
 </div>
 
 <!--
-[1:15 → 1:45] POLL — 30 sec
+**⏱ 1:15 → 1:45 · 30 sec** · *TODO: paste the poll URL into PollEmbed first. If the venue Wi-Fi blocks the iframe, the QR + link still work.*
 
-- TODO: create the opening poll (Slido/Mentimeter), paste the URL into PollEmbed (both here and the closing poll).
-- Office: scan the QR. Remote: link in chat.
-- If the iframe is blocked on the venue network, the QR + link still works. Switch to the poll tab instead.
+Vote now! Office: scan the QR code with your phone. Remote friends: the link is in the chat. *(paste the link into the chat now)*
+
+Pick every one you think is **real**. You've got about twenty seconds.
+
+*(While people vote:)* I'll give you a hint: at least one of them is real. Maybe more. Maybe less. *(smile)*
+
+*(Glance at results)* Ooh, interesting. Some very confident people here. Let's find out.
 -->
 
 ---
@@ -151,17 +164,21 @@ clicks: 5
 <button v-if="['slide', 'presenter'].includes($renderContext)" class="skip-btn" title="Jump to the next slide without flipping the cards" @click.stop="$nav.nextSlide()">Skip reveal <span class="i-carbon-skip-forward-filled"></span></button>
 
 <!--
-[1:45 → 2:15] REVEAL — 30 sec (this is the "wow" of section 1)
+**⏱ 1:45 → 2:15 · 30 sec** · *Arrow key / clicker flips one card per click. Short on time? "Skip reveal" (top-right) jumps to the next slide.*
 
-- Click 1–4 flips each card. Glance at the poll results before each flip.
-  - Short on time? "Skip reveal" (top-right) jumps straight to the next slide. Arrow keys / clicker still flip the cards one by one.
-  - A REAL: Sumbangan Asas Rahmah (SARA): one-off RM100 credited to the MyKad of every Malaysian 18+, usable 31 Aug–31 Dec 2025 at 4,100+ outlets (The Vibes). Lesson: "too good to be true" isn't proof either. Verify via official channels.
-  - B FAKE: The reel puts the headline "Guru Beban Negara" over a cut-down part of her 7 Aug 2025 ITB speech, where she actually says teacher pay is "salah satu tantangan keuangan negara". Other versions were AI-edited to add the words. Sri Mulyani: "saya tidak pernah menyatakan bahwa guru sebagai beban negara" (Republika, 19 Aug 2025). Lesson: a real clip + a fake caption = still fake.
-  - C FAKE: AI-generated. JPJ DG Datuk Aedy Fadly Ramli denied it and reported it to MCMC (Utusan Melayu Plus / Malaysia Gazette, 7 Jul 2026).
-  - D FAKE: Kompas Cek Fakta (2 Mar 2026): TruthScan 97% AI; the original Facebook account tagged it #ceritafiksi.
-  - Each card back has a "Source ↗" link that opens the article (mouse click; doesn't flip the card).
-- Click 5: "Everyone can be fooled." Pause a beat.
-- Cards also flip on mouse click (local only), but use the clicker/arrow keys so the audience screen stays in sync.
+Let's see how you did. Card A, the RM100…
+
+[click] **Real!** *(pause)* SARA, Sumbangan Asas Rahmah. Every Malaysian eighteen and above really got RM100 on their MyKad. So "too good to be true" isn't proof either. You still have to check.
+
+[click] Card B, Sri Mulyani… **fake.** She never said it. Someone took her real speech at ITB, cut it, and slapped a fake caption on it. Real clip, fake caption: still fake. *(Optional: "Real speech ▶" on the card opens the original speech.)*
+
+[click] Card C, the angry JPJ customer: **fake.** AI-generated. JPJ denied it and reported it to MCMC.
+
+[click] Card D, the coin hoarder: **fake.** An AI image, and the original page even tagged it "cerita fiksi". Fiction. But it got shared as news.
+
+[click] So, hands up if you got all four right. *(look at room and camera)* …Not many. That's the point.
+
+**Everyone can be fooled.** *(pause a beat)*
 -->
 
 ---
@@ -181,10 +198,11 @@ class: flex flex-col justify-center
 </p>
 
 <!--
-[2:15 → 2:30] PUNCHLINE — 15 sec
+**⏱ 2:15 → 2:30 · 15 sec** · *Warm, not mocking.*
 
-- Land the core message: it's about habits, not age or intelligence.
-- Joke is warm, not mocking: let the laugh happen, then move on.
+And this is important: it's not a boomer problem. You just saw a room full of tech people get fooled. It's a **human** problem.
+
+[click] Boomers just have bigger WhatsApp groups. *(let them laugh, then move on)*
 -->
 
 ---
@@ -215,13 +233,19 @@ class: flex flex-col justify-center
 </div>
 
 <!--
-[2:30 → 4:00] SCALE — 1.5 min
+**⏱ 2:30 → 4:00 · 1.5 min** · *The counters animate on their own. Don't read the numbers twice.*
 
-- MY: MCMC asked platforms to remove 63,215 false content items between Jan 2022 and May 2026; 86% were taken down.
-- ID: Mafindo logged 1,593 hoaxes in one year (Oct 2024 – Oct 2025), many using AI deepfakes.
-- These are only what got flagged and counted. The real number is bigger.
-- Term box: same thing, different words. "Hoaks" in Indonesia, "berita palsu" / "tular" (viral) in Malaysia.
-- Don't read numbers aloud twice; let the counters do the work.
+So how big is this? Let's look at both countries.
+
+**Malaysia.** Between January 2022 and May 2026, MCMC asked platforms to take down sixty-three thousand false content items. *(point at the counter)* And eighty-six percent of them were taken down.
+
+**Indonesia.** Mafindo, the anti-hoax society, logged one thousand five hundred and ninety-three hoaxes in just one year, from October 2024 to October 2025. And a lot of them used AI deepfakes.
+
+And remember: these are only the ones that got **caught and counted**. The real number is much bigger.
+
+*(point at the term box)* By the way, same problem, different words. In Indonesia we say **hoaks**. In Malaysia you say **berita palsu**, or when it spreads, it's **tular**.
+
+Quick one for the room: Indonesians, did you know the word *tular*? Malaysians, *hoaks*? *(quick show of hands, then move on)*
 -->
 
 ---
@@ -246,12 +270,15 @@ class: flex flex-col justify-center
 </div>
 
 <!--
-[4:00 → 5:00] SAME PLAYBOOK — 1 min
+**⏱ 4:00 → 5:00 · 1 min** · *Stay neutral: this is about scammers abusing famous faces, not about the leaders or politics. Screenshots open the articles.*
 
-- Click 1 (MY): deepfake videos of PM Anwar Ibrahim and business figures were used to push fake investment schemes.
-- Click 2 (ID): a deepfake of President Prabowo offering "government aid". A suspect was arrested in Jan 2025, with victims across 20 provinces.
-- Stay neutral: this is about scammers abusing famous faces, not about the leaders or politics.
-- Screenshots are text-only source cards from scripts/capture_sources.py (re-run to refresh). The ID source is an opinion column on Hukumonline.
+Now here's what made me want to give this talk. The scams look **exactly the same** in both countries.
+
+[click] In Malaysia: deepfake videos of Prime Minister Anwar Ibrahim, and of well-known business figures, used to push fake investment schemes. "Invest with me, guaranteed returns."
+
+[click] In Indonesia: a deepfake of President Prabowo offering "government aid". In January 2025, police arrested a suspect, and the victims were spread across twenty provinces.
+
+Different country. Different leader. *(pause)* Did you notice what's the same? Hold that thought.
 -->
 
 ---
@@ -267,11 +294,21 @@ clicks: 4
 <p class="mt-10 text-center text-muted" v-if="$clicks >= 4">Different country, different face. <b class="text-[var(--ss-text)]">Same script.</b></p>
 
 <!--
-[5:00 → 6:00] SCAM PATTERN — 1 min (the "wow" of section 3)
+**⏱ 5:00 → 6:00 · 1 min** · *The "wow" of this section: one piece per click.*
 
-- Click 1: famous face. Click 2: free money. Click 3: WhatsApp number.
-- Click 4: = SCAM. Every time.
-- "You don't need to know if the video is real. If those three show up together, it's a scam."
+Let's break down the script. Every one of these scams has three ingredients.
+
+[click] One: a **famous face**. A leader, a celebrity, someone you trust. Often deepfaked now.
+
+[click] Two: **free money**. "Bantuan", "investment", "guaranteed returns".
+
+[click] Three: a **WhatsApp number**. "Contact my admin to claim."
+
+[click] Put them together, and it's a **scam**. Every single time.
+
+Here's the good news: you don't need to know if the video is real or AI. You don't need to be an expert. If you see those three things together: **it's a scam.** Done.
+
+*(Ask the room:)* Has anyone here seen one of these in their own feed? *(nod, quick acknowledgement)* Yeah. Most of us have.
 -->
 
 ---
@@ -294,13 +331,21 @@ li { list-style: none; }
 </style>
 
 <!--
-[6:00 → 7:45] PSYCHOLOGY — 1 min 45 sec (~20 sec each)
+**⏱ 6:00 → 7:45 · 1 min 45 sec** · *~20 sec per point. Ask the room before revealing, if time allows.*
 
-- Sharing = caring: forwarding is how we show we care about the family group. Checking feels like extra work, so accuracy is skipped.
-- Trust the sender: we judge the person who forwarded it, not the content. "Uncle wouldn't lie." He didn't. He just didn't check.
-- Repetition: seeing the same claim in 5 groups makes it feel true. That's the illusory truth effect.
-- Emotion: fear, anger and urgency switch off the "wait, is this true?" part of the brain.
-- Just in case: "If it's fake, no harm." But sharing isn't free: it costs trust, and sometimes money.
+So if these are so easy to spot, why do smart people still forward them? Let me ask you first: why do **you** forward things? *(pause 2 seconds, let someone answer, or continue)*
+
+[click] **Sharing is caring.** In the family group, forwarding is how we show love. "Hati-hati ya, semua!" We care about the people, so we skip checking whether it's true.
+
+[click] **We trust the sender, not the content.** "Uncle wouldn't lie." And he didn't! He just didn't check either.
+
+[click] **Repetition feels true.** When you see the same message in five different groups, it starts to feel true. Psychologists call this the *illusory truth effect*.
+
+[click] **Emotion beats reason.** Fear, anger, urgency. "URGENT! Share before it's deleted!" Strong emotion switches off the part of the brain that asks, "wait, is this true?"
+
+[click] And finally: **"just in case."** "If it's fake, no harm done, right?" But sharing isn't free. It costs trust, and sometimes it costs people real money.
+
+*(Ask:)* Which one is you? Be honest. For me, it's number one. *(smile)*
 -->
 
 ---
@@ -331,11 +376,15 @@ li { list-style: none; }
 <p v-click class="mt-8 text-center">Nobody is immune. <span class="text-pause">Just different blind spots.</span></p>
 
 <!--
-[7:45 → 8:30] AGE SPLIT — 45 sec
+**⏱ 7:45 → 8:30 · 45 sec** · *Not mocking either side.*
 
-- Older: grew up when anything published had passed an editor. Same instinct, but now anyone can publish. Newer to the tools.
-- Younger: we're fast. We trust influencers, and we repost for engagement, not accuracy.
-- Not mocking either side; same human brain, different blind spots.
+And different generations fall for it in different ways.
+
+[click] Our parents grew up when anything **published** had passed an editor. If it's in the newspaper, someone checked it. That instinct made sense then. Now anyone can publish anything. And many of them are newer to these digital tools.
+
+[click] And us, the younger ones? We're **fast**. Scroll, react, repost. We trust influencers. And sometimes we repost for the likes, not because it's true.
+
+[click] So nobody is immune. We just have **different blind spots**.
 -->
 
 ---
@@ -352,11 +401,19 @@ class: flex flex-col justify-center
 <p class="text-muted mt-6">Remote: type it in the chat · Office: shout it out</p>
 
 <!--
-[8:30 → 9:00] CHAT PROMPT — 30 sec
+**⏱ 8:30 → 9:00 · 30 sec** · *Hybrid moment. Read 1–2 from the chat + 1 from the room. Skip anything touching race, religion, royalty or politics.*
 
-- Hybrid moment: read 1–2 answers from the chat aloud, plus 1 from the room.
-- Keep it light. Skip anything that touches 3R or politics.
-- Have a backup ready in case chat is quiet. TODO: your own family-group example (optional).
+Okay, your turn! What's the **weirdest hoax your family group has ever sent you?**
+
+Remote friends: type it in the chat right now. Office: just shout it out!
+
+*(Read 1–2 from the chat aloud: "Oh, [name] says…!" React, laugh.)*
+
+*(Take one from the room.)*
+
+*(If it's quiet, use your own:)* TODO: your own family-group hoax story, one or two sentences.
+
+Love it. Thank you! Okay, let's talk about a different kind of misinformation.
 -->
 
 ---
@@ -386,12 +443,25 @@ next:   "Ask your doctor what's right for you."
 <p v-click class="mt-6 text-center text-muted">Short videos sell <span class="text-fake">certainty</span>. Real advice sounds <span class="text-real">calm</span>.</p>
 
 <!--
-[9:00 → 9:45] ADVICE OVERLOAD — 45 sec (Magic Move = "wow" of section 5)
+**⏱ 9:00 → 9:45 · 45 sec** · *Magic Move: each click lights up one red flag.*
 
-- Clicks 1–4: red flags light up one by one: absolute words, guilt, no source, selling something. Click 5: all four.
-- Click 6: morphs into what consensus advice actually sounds like. Boring, hedged, points you to a professional.
-- Click 7: the takeaway line.
-- Short videos sell certainty, and that creates overthinking, guilt and anxiety. Especially for new parents.
+This one isn't a scam. It's **advice**. You've all seen videos like this. *(read it dramatically)* "NEVER do X again! You've been doing it WRONG your whole life! Doctors don't want you to know this… Link in bio."
+
+Let's look closer.
+
+[click] "NEVER": **absolute words**. Real experts almost never talk like that.
+
+[click] "You've been doing it wrong": **guilt**. Makes you anxious, makes you keep watching.
+
+[click] "Doctors don't want you to know": **no source**. Which doctors? Says who?
+
+[click] "Link in bio": **selling something**. Follow the money.
+
+[click] Four red flags. In one fifteen-second video.
+
+[click] Now here's what real health advice sounds like. "Guidelines from KKM, Kemenkes, WHO suggest X may not suit everyone. Ask your doctor." *(pause)* Boring, right?
+
+[click] And that's exactly the point. Short videos sell **certainty**. Real advice sounds **calm**. If it's thrilling and absolutely certain, be suspicious.
 -->
 
 ---
@@ -419,13 +489,21 @@ next:   "Ask your doctor what's right for you."
 <p v-click class="mt-6 text-center !text-xl text-muted">"We survived fine back then" is partly <b>survivorship bias</b>. Some new advice is real: baby back-sleeping, car seats.</p>
 
 <!--
-[9:45 → 11:00] CONSENSUS VS CONTENT — 1 min 15 sec
+**⏱ 9:45 → 11:00 · 1 min 15 sec**
 
-- Rule: trust consensus (KKM, Kemenkes, IDAI, WHO, your own doctor) over content (one creator, 30 sec, no context).
-- Click 1, red flags: absolute words, selling something, "one study", no source.
-- Click 2, balance: "we survived fine back then" is partly survivorship bias. We only hear from those who survived.
-  Some new advice is genuinely better: babies sleeping on their backs, car seats.
-- So: not "ignore all new advice", but "check who's behind it".
+So who should we trust? Here's my simple rule: trust **consensus**, not **content**.
+
+Consensus is KKM, Kemenkes, IDAI, the WHO, and **your own doctor**: many experts, many studies, agreeing.
+
+Content is one creator, thirty seconds, no context.
+
+*(Ask:)* Quick show of hands: who has changed a habit because of a TikTok or Reels video? *(raise your own hand)* Me too. No judgement!
+
+[click] So when you watch advice, look for these red flags: absolute words, selling something, "one study says", and no source at all.
+
+[click] And one balancing point, because I know someone's thinking it: "We survived fine back then!" *(smile)* Partly, that's **survivorship bias**: we only hear from the people who survived. Some new advice really is better. Putting babies to sleep on their backs. Car seats.
+
+So the lesson isn't "ignore all new advice". It's: **check who's behind it.**
 -->
 
 ---
@@ -452,12 +530,17 @@ flowchart LR
 </div>
 
 <!--
-[11:00 → 11:30] TOOLKIT — 30 sec
+**⏱ 11:00 → 11:30 · 30 sec**
 
-- STOP: the urge to forward is the signal to pause.
-- CHECK THE SOURCE: who made this? Is it a real outlet or an official account?
-- CROSS-CHECK: is anyone else credible reporting it? Is there a fact-check?
-- Click, AI rule: deepfakes are too good now to spot by eye. Don't try. If a public figure is offering money via WhatsApp, it's a scam. Verify through official channels.
+So what do we actually **do**? Three steps. Easy to remember.
+
+**Stop.** That itch to forward right now? That's your signal to pause.
+
+**Check the source.** Who made this? A real news outlet? An official account? Or "a friend of a friend"?
+
+**Cross-check.** Is anyone else credible reporting it? Is there already a fact-check?
+
+[click] And one special rule for AI. Deepfakes are now too good to spot by eye, so don't even try. If a public figure is offering you money through WhatsApp: **it's a scam.** Verify through official channels.
 -->
 
 ---
@@ -485,13 +568,19 @@ is_gov_my: false   # ❌ not the government
 <div class="footnote">Fictional URL for illustration only.</div>
 
 <!--
-[11:30 → 12:00] LINK ANATOMY — 30 sec
+**⏱ 11:30 → 12:00 · 30 sec** · *Fictional URL.*
 
-- Step 0: looks official. It has "gov.my" and "bantuan pemerintah" in it.
-- Clicks 1–3: break it down line by line. "bantuan-pemerintah.gov.my." is decoration; claim-now.site is the real domain; /daftar is just the page.
-- Click 4: whoever owns claim-now.site owns this page. Not the government.
-- Click 5: the rule: read the domain right before the first "/".
-- Fictional URL, not a real domain.
+Let's practise checking the source. Here's a link. *(read it)* bantuan-pemerintah dot gov dot my… looks official, right? *(Ask:)* Who would click this? *(pause)*
+
+[click] Let's break it down. This first part, "bantuan-pemerintah.gov.my", is just decoration. Anyone can type that.
+
+[click] **This** is the real domain: claim-now dot site.
+
+[click] And "/daftar" is just the page.
+
+[click] So who owns this link? Claim-now dot site. Not the government.
+
+[click] Here's the trick: read the part **right before the first slash**. That's the owner. Everything before it can be fake.
 -->
 
 ---
@@ -521,11 +610,23 @@ check: [Sebenarnya.my, AIFA, turnbackhoax.id, cekfakta.com]
 <p class="mt-4 text-center !text-lg text-muted">Fictional, generic example</p>
 
 <!--
-[12:00 → 12:30] WHATSAPP MESSAGE — 30 sec
+**⏱ 12:00 → 12:30 · 30 sec** · *Fictional message.*
 
-- Typical forwarded message (fictional).
-- Clicks 1–4: red flags light up one by one: "forwarded many times" (nobody you know wrote it), urgency + asks to share, no source, asks to pay. Click 5: all four.
-- Click 6: 4 red flags = stop and check one of the tools on the next slide.
+And here's a message you've probably all received in some form. *(read it urgently)* "URGENT!!! Share to ALL groups before it's deleted! FREE aid for every family, claim before midnight! Pay a small admin fee here."
+
+*(Ask:)* How many red flags can you spot? Shout it out! *(let 1–2 people answer)*
+
+[click] "Forwarded many times": nobody you know actually wrote this.
+
+[click] "URGENT, share to all": urgency, and it's asking **you** to spread it.
+
+[click] "Free aid": from who? No source, no name, no date.
+
+[click] "Pay a small admin fee": real aid never asks you to pay to receive it.
+
+[click] Four red flags.
+
+[click] Verdict: **stop.** And check it with one of these tools. Which brings me to…
 -->
 
 ---
@@ -543,12 +644,15 @@ check: [Sebenarnya.my, AIFA, turnbackhoax.id, cekfakta.com]
 <div class="footnote">AIFA chatbot launch — Bernama (bernama.com/en/news.php?id=2387383)</div>
 
 <!--
-[12:30 → 13:00] TOOLS — 30 sec
+**⏱ 12:30 → 13:00 · 30 sec** · *TODO: confirm the Indonesian WhatsApp channel before the talk.*
 
-- MY: Sebenarnya.my for fact-checks; AIFA WhatsApp bot at 03-8688 7997; NSRC hotline 997 for scams.
-- ID: turnbackhoax.id and cekfakta.com; Komdigi aduan konten for reporting.
-- TODO: confirm the Indonesian WhatsApp bot (Mafindo / Komdigi channel) before the talk.
-- Invite everyone to snap a photo; remote folks can screenshot.
+…your toolkit. **Take out your phone and take a photo of this slide.** Remote friends: screenshot now! *(pause 3 seconds)*
+
+**Malaysia:** Sebenarnya.my to check news. **AIFA**, MCMC's fact-check bot, right in WhatsApp: 03-8688 7997. Just forward it the message. And for scams: call NSRC at **997**.
+
+**Indonesia:** turnbackhoax.id and cekfakta.com to check, and Komdigi's aduan konten to report.
+
+*(Ask:)* Everyone got the photo? Okay, good.
 -->
 
 ---
@@ -573,11 +677,17 @@ check: [Sebenarnya.my, AIFA, turnbackhoax.id, cekfakta.com]
 </div>
 
 <!--
-[13:00 → 14:00] WORK + FAMILY — 1 min
+**⏱ 13:00 → 14:00 · 1 min**
 
-- Click 1, work: in 2024 an Arup employee in Hong Kong transferred about US$25M after a video call where every "executive" was a deepfake.
-- Team rule: any request for money, credentials or access gets verified through a second channel (call back, Slack, in person), even if it looks like it's from the boss. The boss will thank you.
-- Click 2, family: we techies are already the ones relatives ask when their phone or WiFi breaks, so they trust us on "is this real?" too. Correct privately (not in the group), thank them for caring, and share the fact-check link, not a lecture.
+Last thing. This matters at work and at home.
+
+[click] **At work.** In 2024, an employee at Arup in Hong Kong joined a video call with what looked like senior executives. Every "executive" on that call was a **deepfake**. And the employee transferred about **twenty-five million US dollars**.
+
+So here's our team rule: any request for **money, passwords, or access**, verify it through a **second channel**. Call them back. Message them on Slack. Walk over to their desk. Even if it looks like it's from the boss. *(smile)* Especially if it's from the boss. Your boss will thank you.
+
+[click] **At home.** We're the "tech person" in our families. They already call us when the WiFi breaks, so they'll trust us on "is this real?" too.
+
+When someone in the family group shares a hoax: correct them **privately**, not in front of the whole group. **Thank them** for caring, because they meant well. And send the **fact-check link**, not a lecture.
 -->
 
 ---
@@ -598,10 +708,11 @@ layout: center
 </div>
 
 <!--
-[14:00 → 14:15] CLOSING POLL + CTA — 15 sec (results can run during Q&A)
+**⏱ 14:00 → 14:15 · 15 sec** · *TODO: closing-poll items (different from round 1). Results can show during Q&A.*
 
-- TODO: new poll items (different from round 1), same poll tool.
-- CTA: save AIFA (MY) or turnbackhoax.id (ID) right now, and forward it to your family group today. The one forward that actually helps.
+Now: round two! New items, same poll link. Let's see if the toolkit helps. Vote now and I'll show the results during Q&A.
+
+And one homework for today. *(point at the yellow box)* Save **AIFA** or **turnbackhoax.id** on your phone, and send it to your family group **today**. That's the one forward that actually helps.
 -->
 
 ---
@@ -621,10 +732,15 @@ transition: fade
 </div>
 
 <!--
-[14:15 → 14:30] FINAL LINE — 15 sec
+**⏱ 14:15 → 14:30 · 15 sec** · *Slow. One click per question. Let each one land.*
 
-- One click per question, slow. Let each one land.
-- This is the line to remember if they forget everything else.
+If you forget everything else from today, remember three questions. Before you share, ask:
+
+[click] **Who** made this?
+
+[click] **How** do they know?
+
+[click] And **who benefits?** *(pause)*
 -->
 
 ---
@@ -639,11 +755,15 @@ class: text-center
 <div class="mt-10 text-4xl"><span class="i-twemoji-person-raising-hand"></span> Q&A</div>
 
 <!--
-[14:30 →] THANK YOU + Q&A
+**⏱ 14:30 → · Q&A**
 
-- "Terima kasih" works for both countries.
-- Show the round-2 poll results if they're in.
-- Remote questions: ask the moderator to read them out.
+Terima kasih, everyone! *(Works in both countries, by the way.)*
+
+Saring sebelum sharing.
+
+I'd love to take your questions. Remote friends: drop them in the chat, and [moderator] will read them out.
+
+*(Switch to the round-2 poll results if they're ready: "Look, we improved!")*
 -->
 
 ---
@@ -666,9 +786,11 @@ class: text-center
 </div>
 
 <!--
-APPENDIX: not presented, keep for Q&A / shared deck.
+**Appendix: not presented.** Keep for Q&A and for anyone who opens the shared deck.
 
-- TODO: add a source for the Arup Hong Kong case (it was in the brief but had no link).
+If asked "where's this from?": every number and example in the talk is listed here.
+
+TODO: add a source link for the Arup Hong Kong case.
 -->
 
 <style>
