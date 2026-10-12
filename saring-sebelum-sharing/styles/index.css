@@ -193,3 +193,26 @@
 .slidev-layout .slidev-code .line:not(.highlighted):has(~ .line.highlighted) {
   opacity: 0.25;
 }
+
+/* "Skip reveal" button (reveal slide): jumps past remaining clicks */
+.skip-btn {
+  position: absolute;
+  top: 2.4rem;
+  right: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ss-muted);
+  background: var(--ss-card);
+  border: 1px solid var(--ss-border);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.skip-btn:hover {
+  color: var(--ss-text);
+  border-color: var(--ss-pause);
+}

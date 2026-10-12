@@ -148,10 +148,13 @@ clicks: 5
   Everyone can be fooled.
 </div>
 
+<button v-if="['slide', 'presenter'].includes($renderContext)" class="skip-btn" title="Jump to the next slide without flipping the cards" @click.stop="$nav.nextSlide()">Skip reveal <span class="i-carbon-skip-forward-filled"></span></button>
+
 <!--
 [1:45 → 2:15] REVEAL — 30 sec (this is the "wow" of section 1)
 
 - Click 1–4 flips each card. Glance at the poll results before each flip.
+  - Short on time? "Skip reveal" (top-right) jumps straight to the next slide. Arrow keys / clicker still flip the cards one by one.
   - A REAL: Sumbangan Asas Rahmah (SARA): one-off RM100 credited to the MyKad of every Malaysian 18+, usable 31 Aug–31 Dec 2025 at 4,100+ outlets (The Vibes). Lesson: "too good to be true" isn't proof either. Verify via official channels.
   - B FAKE: The reel puts the headline "Guru Beban Negara" over a cut-down part of her 7 Aug 2025 ITB speech, where she actually says teacher pay is "salah satu tantangan keuangan negara". Other versions were AI-edited to add the words. Sri Mulyani: "saya tidak pernah menyatakan bahwa guru sebagai beban negara" (Republika, 19 Aug 2025). Lesson: a real clip + a fake caption = still fake.
   - C FAKE: AI-generated. JPJ DG Datuk Aedy Fadly Ramli denied it and reported it to MCMC (Utusan Melayu Plus / Malaysia Gazette, 7 Jul 2026).
