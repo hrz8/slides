@@ -99,12 +99,14 @@ netlify.toml, vercel.json       # per-deck deploy config
 
 ## Before the talk: fill the TODOs
 
-Search `slides.md` for `TODO` and `PLACEHOLDER`:
+Search `slides.md` for `TODO` and `POLL_URL_HERE`:
 
-- Poll URL: replace `POLL_URL_HERE` (opening + closing poll)
-- Closing-poll items
-- Confirm the Indonesian WhatsApp fact-check channel (tools table)
-- Source link for the Arup case (Sources slide)
+- **Poll URL** (slide "Cast your vote"): replace `POLL_URL_HERE` with your Slido event link. See [SLIDO-SETUP.md](./SLIDO-SETUP.md) for a step-by-step walkthrough from zero.
+- **Family-group hoax story** (slide "Drop the weirdest hoax"): the presenter note has a placeholder for your own one-line hoax story, used only if the room goes quiet.
+- **Live-tool spot-checks** (do these the day before):
+  - Click Hook B's "Real speech ▶" link (YouTube `Zh02Lzk6px8`). If broken, swap for the current ITB channel URL.
+  - Send `hai` to Kalimasada (`+62 859-2160-0500`) on WhatsApp. If no reply within a minute, drop that cell from the "Save these tools" slide.
+  - Send a test message to AIFA (`03-8688 7997`) on WhatsApp. If no reply, note it in the presenter notes.
 
 ## Troubleshooting
 

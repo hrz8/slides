@@ -194,6 +194,257 @@
   opacity: 0.25;
 }
 
+/* "Different ages, different traps" (slide 11) */
+.age-card {
+  background: rgba(22, 29, 51, 0.85);
+  border: 2px solid var(--ss-pause);
+  border-radius: 1rem;
+  padding: 1.6rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+.age-icon {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.age-icon [class^="i-"] { display: inline-block; width: 1em; height: 1em; vertical-align: middle; }
+.age-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--ss-pause);
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.02em;
+}
+.slidev-layout ul.age-list,
+.slidev-layout .age-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.slidev-layout .age-list li {
+  list-style: none;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  padding: 0.55rem 0;
+  border-top: 1px dashed rgba(245, 158, 11, 0.35);
+  color: var(--ss-text);
+  text-align: center;
+}
+.slidev-layout .age-list li::marker { content: ''; }
+.slidev-layout .age-list li:first-child { border-top: none; }
+.age-vs {
+  align-self: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--ss-muted);
+  padding: 0 0.5rem;
+}
+
+/* "Why do we share?" cards (slide 10) */
+.why-card {
+  background: var(--ss-card);
+  border: 1px solid var(--ss-border);
+  border-radius: 1rem;
+  padding: 1.1rem 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+.why-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, rgba(245, 158, 11, 0.08), transparent 60%);
+  pointer-events: none;
+}
+.why-card-wide { grid-column: span 1; }
+.why-icon {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.why-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--ss-text);
+  margin-bottom: 0.35rem;
+  line-height: 1.2;
+}
+.why-body {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--ss-muted);
+}
+
+/* Three-step toolkit (slide 15) */
+.step-card {
+  background: var(--ss-card);
+  border: 2px solid var(--ss-border);
+  border-radius: 1rem;
+  padding: 1.4rem 1.1rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.step-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--ss-muted);
+  margin-bottom: 0.5rem;
+}
+.step-icon { font-size: 3.4rem; line-height: 1; margin-bottom: 0.65rem; }
+.step-icon [class^="i-"] { display: inline-block; width: 1em; height: 1em; vertical-align: middle; }
+.step-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.55rem;
+  line-height: 1.1;
+}
+.step-body { font-size: 1rem; line-height: 1.35; color: var(--ss-muted); }
+
+.step-stop  { border-color: var(--ss-pause); background: linear-gradient(160deg, rgba(245, 158, 11, 0.14), var(--ss-card) 60%); }
+.step-stop  .step-title { color: var(--ss-pause); }
+.step-check { border-color: var(--ss-accent); background: linear-gradient(160deg, rgba(56, 189, 248, 0.14), var(--ss-card) 60%); }
+.step-check .step-title { color: var(--ss-accent); }
+.step-cross { border-color: var(--ss-real); background: linear-gradient(160deg, rgba(34, 197, 94, 0.14), var(--ss-card) 60%); }
+.step-cross .step-title { color: var(--ss-real); }
+
+.step-arrow {
+  align-self: center;
+  font-size: 2rem;
+  color: var(--ss-muted);
+  font-weight: 300;
+}
+
+/* Mocked social-media post (slide 13 "Advice overload") */
+.post-mock {
+  background: var(--ss-card);
+  border: 2px solid var(--ss-fake);
+  border-radius: 1rem;
+  padding: 1.1rem 1.3rem;
+}
+.post-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--ss-border);
+}
+.post-avatar {
+  font-size: 2rem;
+  line-height: 1;
+}
+.post-name { font-weight: 700; }
+.post-meta { font-size: 0.9rem; color: var(--ss-muted); }
+
+/* Red-flag chips (slides 13, 17) */
+.flag-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(239, 68, 68, 0.14);
+  color: var(--ss-fake);
+  border: 1px solid var(--ss-fake);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Fake address bar (slide 16 "Anatomy of a suspicious link") */
+.url-bar {
+  display: flex;
+  align-items: center;
+  background: #080c1b;
+  border: 1px solid var(--ss-border);
+  border-radius: 0.5rem;
+  padding: 0.85rem 1.1rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 1.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.url-bar > .i-mdi-lock { margin-right: 0.65rem; }
+.url-scheme, .url-path { color: var(--ss-muted); }
+.url-decor { color: var(--ss-text); transition: opacity 0.4s, color 0.4s; }
+.url-real {
+  color: var(--ss-text);
+  padding: 0 0.15em;
+  transition: color 0.4s, background 0.4s, text-shadow 0.4s, font-weight 0.4s;
+}
+.url-dim { opacity: 0.35; }
+.url-flash {
+  color: var(--ss-fake) !important;
+  background: rgba(239, 68, 68, 0.2);
+  border-radius: 0.25rem;
+  text-shadow: 0 0 10px rgba(239, 68, 68, 0.55);
+  font-weight: 800;
+}
+.label-chip {
+  background: var(--ss-card);
+  border: 1px solid var(--ss-border);
+  border-radius: 0.75rem;
+  padding: 0.7rem 1rem;
+}
+.label-chip-fake { border-color: var(--ss-fake); }
+.chip-title { font-weight: 700; font-size: 1.05rem; }
+.chip-sub { font-size: 0.85rem; color: var(--ss-muted); margin-top: 0.15rem; }
+
+/* WhatsApp message bubble (slide 17 "The forwarded message") */
+.wa-bubble {
+  position: relative;
+  background: #0a3c38;
+  color: #e9ffee;
+  padding: 0.95rem 1.15rem 0.65rem;
+  border-radius: 0 1rem 1rem 1rem;
+  margin-left: 12px;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  max-width: 40rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.wa-bubble::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 12px;
+  height: 14px;
+  background: #0a3c38;
+  clip-path: polygon(100% 0, 100% 100%, 0 0);
+}
+.forward-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #b7cbca;
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+.msg-line { margin: 0.25rem 0; }
+.msg-time {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #b7cbca;
+  margin-top: 0.4rem;
+}
+
 /* "Skip reveal" button (reveal slide): jumps past remaining clicks */
 .skip-btn {
   position: absolute;

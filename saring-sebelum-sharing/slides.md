@@ -151,7 +151,7 @@ clicks: 5
 # The reveal
 
 <div class="grid grid-cols-4 gap-4 mt-4 h-80">
-  <FlipCard label="Every Malaysian adult gets RM100 credited to their MyKad. No application needed." kind="A · Headline" flag="my" verdict="REAL" image="/assets/hoax/my-sara-photo.jpg" view-href="https://www.thevibes.com/articles/news/112204/rm100-sara-aid-via-mykad-begins-nationwide-distribution" reason="SARA one-off RM100, usable 31 Aug–31 Dec 2025." back-image="/assets/screenshots/my-sara.png" href="https://www.thevibes.com/articles/news/112204/rm100-sara-aid-via-mykad-begins-nationwide-distribution" :flipped="$clicks >= 1" />
+  <FlipCard label="Every Malaysian adult gets RM100 credited to their MyKad. No application needed." kind="A · Headline" flag="my" verdict="REAL" image="/assets/hoax/my-sara-photo.jpg" view-href="https://www.thevibes.com/articles/news/112204/rm100-sara-aid-via-mykad-begins-nationwide-distribution" reason="SARA 2025 was real: RM100 one-off, redeemable 31 Aug–31 Dec 2025 (window closed)." back-image="/assets/screenshots/my-sara.png" href="https://www.thevibes.com/articles/news/112204/rm100-sara-aid-via-mykad-begins-nationwide-distribution" :flipped="$clicks >= 1" />
   <FlipCard label="Finance Minister Sri Mulyani: “guru itu beban negara” (teachers are a burden on the state)" kind="B · Video" flag="id" verdict="FAKE" image="/assets/hoax/id-srimulyani-video.jpg" view-href="/assets/hoax/id-srimulyani-viral.mp4" extra-href="https://www.youtube.com/watch?v=Zh02Lzk6px8" extra-label="Real speech ▶" reason="She never said it. Real speech, cut + fake caption. She called it HOAX." back-image="/assets/screenshots/id-srimulyani.png" href="https://ekonomi.republika.co.id/berita/t18wf6409/sri-mulyani-bantah-sebut-guru-beban-negara-cap-video-viral-hoaks-hasil-deepfake" :flipped="$clicks >= 2" />
   <FlipCard label="TikTok: customer rages at JPJ, “only 1 counter open, staff still on break!”" kind="C · Video" flag="my" verdict="FAKE" image="/assets/hoax/my-jpj-tiktok.jpg" :image-blur="3.5" play reason="AI-generated. JPJ denied it and reported it to MCMC." back-image="/assets/screenshots/my-jpj.png" href="https://utusanmelayuplus.com/jpj-nafi-video-kononnya-petugas-bergaduh-dengan-pelanggan-dipercayai-dijana-ai/" :flipped="$clicks >= 3" />
   <FlipCard label="“KISAH NYATA: man arrested for hoarding coins in water gallons”" kind="D · Image" flag="id" verdict="FAKE" image="/assets/hoax/id-koin-ai.png" view-href="https://www.lpkapnews.com/2026/02/nimbun-uang-koin-di-galon-air-pria-ini.html" reason="AI image (97%, TruthScan). Source tagged it #ceritafiksi." back-image="/assets/hoax/id-koin-factcheck.png" href="https://www.kompas.com/cekfakta/read/2026/03/02/113300182/-hoaks-foto-pria-ditangkap-polisi-karena-timbun-uang-koin" :flipped="$clicks >= 4" />
@@ -212,9 +212,9 @@ And this is important: it's not a boomer problem. You just saw a room full of te
 <div class="grid grid-cols-2 gap-8 mt-6">
   <div class="card card-fake text-center">
     <div class="flex items-center justify-center gap-2 text-xl"><span class="i-twemoji-flag-malaysia text-3xl"></span> Malaysia · MCMC</div>
-    <div class="text-6xl font-bold mt-3 text-fake"><CountUp :to="63215" /></div>
-    <div class="text-xl mt-1">false content items flagged to platforms<br><span class="text-muted text-base">Jan 2022 – May 2026</span></div>
-    <div class="text-3xl font-bold mt-3"><CountUp :to="86" suffix="%" :duration="1500" /> <span class="text-xl font-normal">taken down</span></div>
+    <div class="text-6xl font-bold mt-3 text-fake"><CountUp :to="58268" /></div>
+    <div class="text-xl mt-1">false content items flagged to platforms<br><span class="text-muted text-base">Jan 2022 – Nov 2025</span></div>
+    <div class="text-3xl font-bold mt-3"><CountUp :to="85" suffix="%" :duration="1500" /> <span class="text-xl font-normal">taken down</span></div>
   </div>
   <div class="card card-fake text-center">
     <div class="flex items-center justify-center gap-2 text-xl"><span class="i-twemoji-flag-indonesia text-3xl"></span> Indonesia · Mafindo</div>
@@ -229,7 +229,7 @@ And this is important: it's not a boomer problem. You just saw a room full of te
 </div>
 
 <div class="footnote">
-  Sources: MCMC takedown figures — The Sun (thesun.my/?p=644239) · Mafindo report — Okezone (economy.okezone.com, 23 Oct 2025)
+  Sources: MCMC takedown figures — Teo Nie Ching, Dewan Negara reply, Dec 2025 (bernama.com/en/news.php?id=2548175) · Mafindo report — Okezone (economy.okezone.com, 23 Oct 2025)
 </div>
 
 <!--
@@ -237,7 +237,7 @@ And this is important: it's not a boomer problem. You just saw a room full of te
 
 So how big is this? Let's look at both countries.
 
-**Malaysia.** Between January 2022 and May 2026, MCMC asked platforms to take down sixty-three thousand false content items. *(point at the counter)* And eighty-six percent of them were taken down.
+**Malaysia.** Between January 2022 and November 2025, MCMC asked platforms to take down fifty-eight thousand false content items. *(point at the counter)* And eighty-five percent of them were taken down.
 
 **Indonesia.** Mafindo, the anti-hoax society, logged one thousand five hundred and ninety-three hoaxes in just one year, from October 2024 to October 2025. And a lot of them used AI deepfakes.
 
@@ -260,8 +260,8 @@ Quick one for the room: Indonesians, did you know the word *tular*? Malaysians, 
   </div>
   <div v-click>
     <div class="flex items-center gap-2 text-2xl font-bold"><span class="i-twemoji-flag-indonesia text-3xl"></span> Indonesia</div>
-    <p class="!text-xl mt-2">Deepfake of <b>President Prabowo</b> offering <span class="text-fake">"government aid"</span>. Suspect arrested Jan 2025, victims across <b>20 provinces</b></p>
-    <a href="https://www.hukumonline.com/berita/a/deepfake-menyebar-cepat--hukum-bergerak-lambat-lt68f065103ad53" target="_blank" rel="noopener" class="source-link" title="Open source article"><img src="/assets/screenshots/id-prabowo.png" class="source-shot mt-3" alt="Hukumonline: Januari 2025, Bareskrim Polri menangkap AMA, deepfake Presiden Prabowo, korban dari 20 provinsi"></a>
+    <p class="!text-xl mt-2">Deepfake of <b>President Prabowo</b> offering <span class="text-fake">"government aid"</span>. Bareskrim arrested two operators Jan–Feb 2025; one case alone: <b>100+ victims across 20 provinces</b></p>
+    <a href="https://www.hukumonline.com/berita/a/deepfake-menyebar-cepat--hukum-bergerak-lambat-lt68f065103ad53" target="_blank" rel="noopener" class="source-link" title="Open source article"><img src="/assets/screenshots/id-prabowo.png" class="source-shot mt-3" alt="Hukumonline: Bareskrim Polri tangkap pelaku deepfake Presiden Prabowo, korban dari 20 provinsi"></a>
   </div>
 </div>
 
@@ -276,7 +276,7 @@ Now here's what made me want to give this talk. The scams look **exactly the sam
 
 [click] In Malaysia: deepfake videos of Prime Minister Anwar Ibrahim, and of well-known business figures, used to push fake investment schemes. "Invest with me, guaranteed returns."
 
-[click] In Indonesia: a deepfake of President Prabowo offering "government aid". In January 2025, police arrested a suspect, and the victims were spread across twenty provinces.
+[click] In Indonesia: a deepfake of President Prabowo offering "government aid". Bareskrim arrested two operators in January and February 2025. The second one alone defrauded more than a hundred victims across twenty provinces.
 
 Different country. Different leader. *(pause)* Did you notice what's the same? Hold that thought.
 -->
@@ -315,20 +315,33 @@ Here's the good news: you don't need to know if the video is real or AI. You don
 
 # Why do we share? <span class="i-twemoji-thinking-face"></span>
 
-<v-clicks>
-
-- <span class="i-twemoji-red-heart mr-2"></span> **Sharing = caring:** forwarding shows love; accuracy gets skipped
-- <span class="i-twemoji-old-man mr-2"></span> **Trust the sender, not the content:** "Uncle wouldn't lie"
-- <span class="i-twemoji-repeat-button mr-2"></span> **Repetition feels true:** the *illusory truth effect*
-- <span class="i-twemoji-face-screaming-in-fear mr-2"></span> **Emotion beats reason:** fear, anger, urgency
-- <span class="i-twemoji-umbrella mr-2"></span> **"Just in case" logic:** sharing feels free
-
-</v-clicks>
-
-<style>
-ul { padding-left: 0; }
-li { list-style: none; }
-</style>
+<div class="grid grid-cols-3 gap-4 mt-6">
+  <div class="why-card" v-click="1">
+    <span class="i-twemoji-red-heart why-icon"></span>
+    <div class="why-title">Sharing = caring</div>
+    <div class="why-body">Forwarding shows love; accuracy gets skipped.</div>
+  </div>
+  <div class="why-card" v-click="2">
+    <span class="i-twemoji-old-man why-icon"></span>
+    <div class="why-title">Trust the sender, not the content</div>
+    <div class="why-body">"Uncle wouldn't lie." He didn't — he just didn't check.</div>
+  </div>
+  <div class="why-card" v-click="3">
+    <span class="i-twemoji-repeat-button why-icon"></span>
+    <div class="why-title">Repetition feels true</div>
+    <div class="why-body">The <i>illusory truth effect</i>: seen five times, feels real.</div>
+  </div>
+  <div class="why-card why-card-wide" v-click="4">
+    <span class="i-twemoji-face-screaming-in-fear why-icon"></span>
+    <div class="why-title">Emotion beats reason</div>
+    <div class="why-body">Fear, anger, urgency switch off the "wait, is this true?" part of the brain.</div>
+  </div>
+  <div class="why-card why-card-wide" v-click="5">
+    <span class="i-twemoji-umbrella why-icon"></span>
+    <div class="why-title">"Just in case" logic</div>
+    <div class="why-body">Sharing feels free — but it costs trust, and sometimes real money.</div>
+  </div>
+</div>
 
 <!--
 **⏱ 6:00 → 7:45 · 1 min 45 sec** · *~20 sec per point. Ask the room before revealing, if time allows.*
@@ -355,17 +368,22 @@ So if these are so easy to spot, why do smart people still forward them? Let me 
 
 # Different ages, different traps
 
-<div class="grid grid-cols-2 gap-8 mt-6">
-  <div class="card card-pause" v-click>
-    <div class="text-2xl font-bold flex items-center gap-2"><span class="i-twemoji-older-person text-3xl"></span> Older</div>
-    <ul class="mt-3">
+<div class="grid grid-cols-[1fr_auto_1fr] gap-6 items-stretch mt-8">
+  <div class="age-card" v-click="1">
+    <div class="age-icon"><span class="i-twemoji-older-person"></span></div>
+    <div class="age-title">Older</div>
+    <ul class="age-list">
       <li>Grew up when <i>published = edited</i></li>
       <li>Newer to digital tools</li>
     </ul>
   </div>
-  <div class="card card-pause" v-click>
-    <div class="text-2xl font-bold flex items-center gap-2"><span class="i-twemoji-man-technologist text-3xl"></span> Younger</div>
-    <ul class="mt-3">
+
+  <div class="age-vs">vs</div>
+
+  <div class="age-card" v-click="2">
+    <div class="age-icon"><span class="i-twemoji-man-technologist"></span></div>
+    <div class="age-title">Younger</div>
+    <ul class="age-list">
       <li>Speed: scroll, react, repost</li>
       <li>Trust in influencers</li>
       <li>Reposting for engagement</li>
@@ -373,7 +391,7 @@ So if these are so easy to spot, why do smart people still forward them? Let me 
   </div>
 </div>
 
-<p v-click class="mt-8 text-center">Nobody is immune. <span class="text-pause">Just different blind spots.</span></p>
+<p v-click="3" class="mt-10 text-center !text-3xl font-bold">Nobody is immune. <span class="text-pause">Just different blind spots.</span></p>
 
 <!--
 **⏱ 7:45 → 8:30 · 45 sec** · *Not mocking either side.*
@@ -420,30 +438,49 @@ Love it. Thank you! Okay, let's talk about a different kind of misinformation.
 
 # Advice overload <span class="i-twemoji-high-voltage"></span>
 
-````md magic-move {lines: false}
-```yaml
-post:  "❌ NEVER do X again!!! 😱"
-hook:  "You've been doing it WRONG your whole life!"
-proof: "Doctors don't want you to know this..."
-cta:   "Link in bio 👉 my course"
-```
-```yaml {1|2|3|4|all}
-post:  "❌ NEVER do X again!!! 😱"   # 🚩 absolute words
-hook:  "You've been doing it WRONG"  # 🚩 guilt
-proof: "Doctors don't want you…"     # 🚩 no source
-cta:   "Link in bio 👉 my course"    # 🚩 selling something
-```
-```yaml
-source: KKM / Kemenkes / WHO
-says:   "X may not suit everyone."
-next:   "Ask your doctor what's right for you."
-```
-````
+<div class="grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-6 items-stretch mt-4">
+  <div class="post-mock">
+    <div class="post-head">
+      <span class="post-avatar">👩‍⚕️</span>
+      <div>
+        <div class="post-name">@drhealthy_tips</div>
+        <div class="post-meta">2d · 1.2M views</div>
+      </div>
+    </div>
+    <div class="mt-3 space-y-3 text-lg">
+      <div class="flex items-center gap-3">
+        <div class="flex-1">❌ NEVER do X again!!! <span class="i-twemoji-face-screaming-in-fear"></span></div>
+        <span v-click="1" class="flag-chip">absolute</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="flex-1">You've been doing it WRONG your whole life!</div>
+        <span v-click="2" class="flag-chip">guilt</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="flex-1">Doctors don't want you to know this…</div>
+        <span v-click="3" class="flag-chip">no source</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="flex-1"><span class="i-twemoji-backhand-index-pointing-right"></span> Link in bio: my course</div>
+        <span v-click="4" class="flag-chip">selling</span>
+      </div>
+    </div>
+  </div>
 
-<p v-click class="mt-6 text-center text-muted">Short videos sell <span class="text-fake">certainty</span>. Real advice sounds <span class="text-real">calm</span>.</p>
+  <div v-click="5" class="self-center text-4xl text-muted">→</div>
+
+  <div v-click="5" class="card card-real self-center">
+    <div class="text-sm uppercase tracking-wider text-real font-bold">Real advice</div>
+    <div class="text-base text-muted mt-1">KKM · Kemenkes · WHO</div>
+    <p class="!text-lg mt-3">"X may not suit everyone. Ask your doctor what's right for you."</p>
+    <div class="text-sm text-muted mt-3">— no urgency, no sale</div>
+  </div>
+</div>
+
+<p v-click="6" class="mt-5 text-center text-muted">Short videos sell <span class="text-fake font-bold">certainty</span>. Real advice sounds <span class="text-real font-bold">calm</span>.</p>
 
 <!--
-**⏱ 9:00 → 9:45 · 45 sec** · *Magic Move: each click lights up one red flag.*
+**⏱ 9:00 → 9:45 · 45 sec** · *Progressive reveal: one red flag per click, then the real-advice contrast.*
 
 This one isn't a scam. It's **advice**. You've all seen videos like this. *(read it dramatically)* "NEVER do X again! You've been doing it WRONG your whole life! Doctors don't want you to know this… Link in bio."
 
@@ -455,9 +492,7 @@ Let's look closer.
 
 [click] "Doctors don't want you to know": **no source**. Which doctors? Says who?
 
-[click] "Link in bio": **selling something**. Follow the money.
-
-[click] Four red flags. In one fifteen-second video.
+[click] "Link in bio": **selling something**. Follow the money. Four red flags in fifteen seconds.
 
 [click] Now here's what real health advice sounds like. "Guidelines from KKM, Kemenkes, WHO suggest X may not suit everyone. Ask your doctor." *(pause)* Boring, right?
 
@@ -510,71 +545,88 @@ So the lesson isn't "ignore all new advice". It's: **check who's behind it.**
 
 # Your 3-step toolkit
 
-```mermaid {scale: 1.35}
-flowchart LR
-  A["✋ STOP"] --> B["🔎 CHECK THE SOURCE"] --> C["🔁 CROSS-CHECK"]
-  classDef stop fill:#f59e0b,stroke:#f59e0b,color:#0b1020,font-weight:bold
-  classDef check fill:#161d33,stroke:#38bdf8,color:#eef1f8,font-weight:bold
-  classDef cross fill:#22c55e,stroke:#22c55e,color:#0b1020,font-weight:bold
-  class A stop
-  class B check
-  class C cross
-```
-
-<div v-click class="card card-fake mt-8 flex items-center gap-4">
-  <span class="i-twemoji-robot text-5xl shrink-0"></span>
-  <div>
-    <div class="font-bold text-2xl"><span class="text-fake">AI rule:</span> public figure + money + WhatsApp = scam</div>
-    <div class="text-xl text-muted mt-1">Verify via official channels. Don't judge by eye.</div>
+<div class="grid grid-cols-[1fr_auto_1fr_auto_1fr] gap-4 items-stretch mt-8">
+  <div class="step-card step-stop" v-click="1">
+    <div class="step-num">01</div>
+    <div class="step-icon"><span class="i-twemoji-raised-hand"></span></div>
+    <div class="step-title">STOP</div>
+    <div class="step-body">Feel that itch to forward? That's your signal to pause.</div>
+  </div>
+  <div class="step-arrow" v-click="2">→</div>
+  <div class="step-card step-check" v-click="2">
+    <div class="step-num">02</div>
+    <div class="step-icon"><span class="i-twemoji-magnifying-glass-tilted-left"></span></div>
+    <div class="step-title">CHECK THE SOURCE</div>
+    <div class="step-body">Real outlet? Official account? Or "a friend of a friend"?</div>
+  </div>
+  <div class="step-arrow" v-click="3">→</div>
+  <div class="step-card step-cross" v-click="3">
+    <div class="step-num">03</div>
+    <div class="step-icon"><span class="i-twemoji-counterclockwise-arrows-button"></span></div>
+    <div class="step-title">CROSS-CHECK</div>
+    <div class="step-body">Is anyone else credible reporting it? Is there a fact-check?</div>
   </div>
 </div>
 
+<p v-click="4" class="mt-10 text-center !text-xl">Three steps, in order. Every time you want to forward something.</p>
+
 <!--
-**⏱ 11:00 → 11:30 · 30 sec**
+**⏱ 11:00 → 11:30 · 30 sec** · *One card per click, in order.*
 
 So what do we actually **do**? Three steps. Easy to remember.
 
-**Stop.** That itch to forward right now? That's your signal to pause.
+[click] **Stop.** That itch to forward right now? That's your signal to pause.
 
-**Check the source.** Who made this? A real news outlet? An official account? Or "a friend of a friend"?
+[click] **Check the source.** Who made this? A real news outlet? An official account? Or "a friend of a friend"?
 
-**Cross-check.** Is anyone else credible reporting it? Is there already a fact-check?
+[click] **Cross-check.** Is anyone else credible reporting it? Is there already a fact-check?
 
-[click] And one special rule for AI. Deepfakes are now too good to spot by eye, so don't even try. If a public figure is offering you money through WhatsApp: **it's a scam.** Verify through official channels.
+[click] Three steps, in order, every time.
 -->
 
 ---
 
 # Anatomy of a suspicious link <span class="i-twemoji-link"></span>
 
-````md magic-move {lines: false}
-```yaml
-link: https://bantuan-pemerintah.gov.my.claim-now.site/daftar
-```
-```yaml {2|3|4}
-link: https://
-  - bantuan-pemerintah.gov.my.   # decoration (subdomain)
-  - claim-now.site               # 🚩 the REAL domain
-  - /daftar                      # just the page
-```
-```yaml
-owner: claim-now.site
-is_gov_my: false   # ❌ not the government
-```
-````
+<div class="url-bar mt-8">
+  <span class="i-mdi-lock text-xl text-[var(--ss-muted)]"></span>
+  <span class="url-scheme">https://</span><!--
+  --><span class="url-decor" :class="{ 'url-dim': $clicks >= 1 }">bantuan-pemerintah.gov.my.</span><!--
+  --><span class="url-real" :class="{ 'url-flash': $clicks >= 2 }">claim-now.site</span><!--
+  --><span class="url-path" :class="{ 'url-dim': $clicks >= 3 }">/daftar</span>
+</div>
 
-<p v-click class="mt-6 text-center">Read the domain <b>right before the first <code>/</code></b>. That's the owner.</p>
+<div class="grid grid-cols-3 gap-4 mt-6 text-center">
+  <div v-click="1" class="label-chip">
+    <div class="chip-title text-muted">Decoration</div>
+    <div class="chip-sub">anyone can type this</div>
+  </div>
+  <div v-click="2" class="label-chip label-chip-fake">
+    <div class="chip-title text-fake">The REAL domain</div>
+    <div class="chip-sub">this is the owner</div>
+  </div>
+  <div v-click="3" class="label-chip">
+    <div class="chip-title text-muted">The page</div>
+    <div class="chip-sub">just a path</div>
+  </div>
+</div>
+
+<div v-click="4" class="card card-fake mt-6 text-center !text-2xl">
+  Owner: <b class="text-fake">claim-now.site</b> · <span class="text-muted">NOT the government</span>
+</div>
+
+<p v-click="5" class="mt-5 text-center !text-xl">Read the part <b>right before the first <code>/</code></b>. That's the real owner.</p>
 
 <div class="footnote">Fictional URL for illustration only.</div>
 
 <!--
-**⏱ 11:30 → 12:00 · 30 sec** · *Fictional URL.*
+**⏱ 11:30 → 12:00 · 30 sec** · *Fictional URL. Clicks dim the decoration, light up the real domain, then show the verdict.*
 
 Let's practise checking the source. Here's a link. *(read it)* bantuan-pemerintah dot gov dot my… looks official, right? *(Ask:)* Who would click this? *(pause)*
 
-[click] Let's break it down. This first part, "bantuan-pemerintah.gov.my", is just decoration. Anyone can type that.
+[click] This first part, "bantuan-pemerintah.gov.my", is just decoration. Anyone can type that into a subdomain.
 
-[click] **This** is the real domain: claim-now dot site.
+[click] **This** is the real domain: claim-now dot site. Watch it light up red.
 
 [click] And "/daftar" is just the page.
 
@@ -587,30 +639,38 @@ Let's practise checking the source. Here's a link. *(read it)* bantuan-pemerinta
 
 # The forwarded message <span class="i-mdi-whatsapp text-real"></span>
 
-````md magic-move {lines: false}
-```yaml
-forwarded: many times
-message: "URGENT!!! 🚨 Share to ALL groups before it's deleted!"
-offer:   "FREE aid for every family, claim before midnight!"
-action:  "Pay small admin fee here 👉 [link]"
-```
-```yaml {1|2|3|4|all}
-forwarded: many times    # 🚩 nobody you know wrote it
-message: "URGENT!!! 🚨…"  # 🚩 urgency + asks to share
-offer:   "FREE aid…"     # 🚩 no source, no name, no date
-action:  "Pay admin fee" # 🚩 asks you to pay
-```
-```yaml
-red_flags: 4
-verdict: ✋ STOP
-check: [Sebenarnya.my, AIFA, turnbackhoax.id, cekfakta.com]
-```
-````
+<div class="grid grid-cols-[1fr_auto] gap-8 items-center mt-4">
+  <div class="wa-bubble">
+    <div class="forward-tag"><span class="i-mdi-share"></span> Forwarded many times</div>
+    <div class="msg-line">URGENT!!! <span class="i-twemoji-police-car-light"></span></div>
+    <div class="msg-line">Share to ALL groups before it's deleted!</div>
+    <div class="msg-line">FREE aid for every family — claim before midnight!</div>
+    <div class="msg-line">Pay small admin fee here <span class="i-twemoji-backhand-index-pointing-right"></span> [link]</div>
+    <div class="msg-time">12:04 AM</div>
+  </div>
 
-<p class="mt-4 text-center !text-lg text-muted">Fictional, generic example</p>
+  <div class="flex flex-col gap-3">
+    <span v-click="1" class="flag-chip">no author</span>
+    <span v-click="2" class="flag-chip">urgency + "share"</span>
+    <span v-click="3" class="flag-chip">no source</span>
+    <span v-click="4" class="flag-chip">asks for payment</span>
+  </div>
+</div>
+
+<div v-click="5" class="mt-5 card card-fake text-center">
+  <div class="text-2xl font-bold"><span class="i-twemoji-stop-sign"></span> STOP · 4 red flags · Check with:</div>
+  <div class="mt-3 flex flex-wrap gap-2 justify-center">
+    <span class="chip">Sebenarnya.my</span>
+    <span class="chip">AIFA</span>
+    <span class="chip">turnbackhoax.id</span>
+    <span class="chip">cekfakta.com</span>
+  </div>
+</div>
+
+<p class="mt-3 text-center !text-sm text-muted">Fictional, generic example.</p>
 
 <!--
-**⏱ 12:00 → 12:30 · 30 sec** · *Fictional message.*
+**⏱ 12:00 → 12:30 · 30 sec** · *Fictional message. One red-flag chip appears per click.*
 
 And here's a message you've probably all received in some form. *(read it urgently)* "URGENT!!! Share to ALL groups before it's deleted! FREE aid for every family, claim before midnight! Pay a small admin fee here."
 
@@ -624,9 +684,7 @@ And here's a message you've probably all received in some form. *(read it urgent
 
 [click] "Pay a small admin fee": real aid never asks you to pay to receive it.
 
-[click] Four red flags.
-
-[click] Verdict: **stop.** And check it with one of these tools. Which brings me to…
+[click] Verdict: **stop.** Check it with one of these tools. Which brings me to…
 -->
 
 ---
@@ -636,21 +694,22 @@ And here's a message you've probably all received in some form. *(read it urgent
 | | <span class="i-twemoji-flag-malaysia"></span> Malaysia | <span class="i-twemoji-flag-indonesia"></span> Indonesia |
 |---|---|---|
 | **Fact-check** | Sebenarnya.my | turnbackhoax.id · cekfakta.com |
-| **WhatsApp bot** | AIFA (03-8688 7997) | Mafindo / Komdigi channels <span class="text-pause text-base">TODO: confirm</span> |
-| **Report scam** | NSRC **997** | Komdigi aduan konten |
+| **WhatsApp bot** | AIFA (03-8688 7997) | Kalimasada (+62 859-2160-0500) |
+| **Report scam** | NSRC **997** | iasc.ojk.go.id (OJK Anti-Scam) |
+| **Report bad content** | — | aduankonten.id (Komdigi) |
 
 <p class="mt-8 text-center text-muted">Take a photo of this slide <span class="i-twemoji-mobile-phone"></span></p>
 
-<div class="footnote">AIFA chatbot launch — Bernama (bernama.com/en/news.php?id=2387383)</div>
+<div class="footnote">AIFA chatbot — Bernama (bernama.com/en/news.php?id=2387383) · Kalimasada — Mafindo × WhatsApp (test the number before the talk)</div>
 
 <!--
-**⏱ 12:30 → 13:00 · 30 sec** · *TODO: confirm the Indonesian WhatsApp channel before the talk.*
+**⏱ 12:30 → 13:00 · 30 sec** · *Before the talk: send "hai" to Kalimasada (+62 859-2160-0500) to confirm the bot still responds. If dead, drop that cell and leave aduankonten.id as the Indonesia action.*
 
 …your toolkit. **Take out your phone and take a photo of this slide.** Remote friends: screenshot now! *(pause 3 seconds)*
 
 **Malaysia:** Sebenarnya.my to check news. **AIFA**, MCMC's fact-check bot, right in WhatsApp: 03-8688 7997. Just forward it the message. And for scams: call NSRC at **997**.
 
-**Indonesia:** turnbackhoax.id and cekfakta.com to check, and Komdigi's aduan konten to report.
+**Indonesia:** turnbackhoax.id and cekfakta.com to check. **Kalimasada**, Mafindo's WhatsApp bot, at the number on the slide. For a scam that cost someone money: **iasc.ojk.go.id**, OJK's Anti-Scam Centre. For other harmful content: **aduankonten.id**.
 
 *(Ask:)* Everyone got the photo? Okay, good.
 -->
@@ -694,25 +753,18 @@ When someone in the family group shares a hoax: correct them **privately**, not 
 layout: center
 ---
 
-# Round 2: try again <span class="i-twemoji-person-raising-hand"></span>
+# One forward that helps <span class="i-twemoji-family"></span>
 
-<div class="grid grid-cols-[1fr_auto] gap-10 items-center mt-4">
-  <div>
-    <p class="!text-xl text-muted">New items: let's see if the toolkit helps.</p>
-    <div class="placeholder h-40 mt-4">[PLACEHOLDER: closing poll items — TODO]</div>
-    <div class="mt-6 card card-pause !text-xl">
-      <b>Do it today:</b> save <b>AIFA</b> / <b>turnbackhoax.id</b> and send it to your family group <span class="i-twemoji-family"></span>
-    </div>
-  </div>
-  <PollEmbed url="POLL_URL_HERE" title="Round 2" qr-only />
+<div class="card card-pause !text-2xl mt-4 mx-auto max-w-3xl text-center">
+  <b>Do it today:</b> save <b>AIFA</b> (<span class="i-twemoji-flag-malaysia"></span>) or <b>Kalimasada / turnbackhoax.id</b> (<span class="i-twemoji-flag-indonesia"></span>) and send it to your family group.
 </div>
 
+<p class="mt-8 text-center text-xl text-muted">The one forward you can send without checking first.</p>
+
 <!--
-**⏱ 14:00 → 14:15 · 15 sec** · *TODO: closing-poll items (different from round 1). Results can show during Q&A.*
+**⏱ 14:00 → 14:15 · 15 sec**
 
-Now: round two! New items, same poll link. Let's see if the toolkit helps. Vote now and I'll show the results during Q&A.
-
-And one homework for today. *(point at the yellow box)* Save **AIFA** or **turnbackhoax.id** on your phone, and send it to your family group **today**. That's the one forward that actually helps.
+One homework for today. *(point at the yellow box)* Save **AIFA** — or **Kalimasada** and **turnbackhoax.id** — on your phone, and send it to your family group **today**. That's the one forward that actually helps.
 -->
 
 ---
@@ -772,16 +824,20 @@ I'd love to take your questions. Remote friends: drop them in the chat, and [mod
 
 <div class="text-sm space-y-1 mt-2 sources">
 
-- Mafindo report (1,593 hoaxes): Okezone · [economy.okezone.com/read/2025/10/23/320/3178861](https://economy.okezone.com/read/2025/10/23/320/3178861/laporan-mafindo-ungkap-pertamina-jadi-sasaran-hoaks-ini-daftarnya-nbsp?page=all)
-- Deepfake Prabowo arrests: Hukumonline · [hukumonline.com/berita/a/deepfake-menyebar-cepat--hukum-bergerak-lambat-lt68f065103ad53](https://www.hukumonline.com/berita/a/deepfake-menyebar-cepat--hukum-bergerak-lambat-lt68f065103ad53)
-- Malaysian leaders deepfake scams: AI Incident Database · [incidentdatabase.ai/entities/anwar-ibrahim](https://incidentdatabase.ai/entities/anwar-ibrahim/)
-- MCMC takedown figures: The Sun · [thesun.my/?p=644239](https://thesun.my/?p=644239)
-- AIFA chatbot launch: Bernama · [bernama.com/en/news.php?id=2387383](https://www.bernama.com/en/news.php?id=2387383)
-- Hook A, RM100 SARA via MyKad: The Vibes · [thevibes.com/articles/news/112204](https://www.thevibes.com/articles/news/112204/rm100-sara-aid-via-mykad-begins-nationwide-distribution)
+- MCMC takedowns (58,268 / 85% · Jan 2022–Nov 2025): Teo Nie Ching, Dewan Negara reply · Bernama · [bernama.com/en/news.php?id=2548175](https://bernama.com/en/news.php?id=2548175)
+- Mafindo report (1,593 hoaxes · Oct 2024–Oct 2025): Okezone · [economy.okezone.com/read/2025/10/23/320/3178861](https://economy.okezone.com/read/2025/10/23/320/3178861/laporan-mafindo-ungkap-pertamina-jadi-sasaran-hoaks-ini-daftarnya-nbsp?page=all)
+- Deepfake Prabowo arrests (AMA Jan 16 + JS Feb 4, 2025; 20 provinces = JS case): Hukumonline · [hukumonline.com/berita/a/deepfake-menyebar-cepat--hukum-bergerak-lambat-lt68f065103ad53](https://www.hukumonline.com/berita/a/deepfake-menyebar-cepat--hukum-bergerak-lambat-lt68f065103ad53) · RMOL (JS case detail) · [rmol.id/read/2025/02/07/655365](https://rmol.id/read/2025/02/07/655365/bareskrim-tangkap-lagi-pelaku-video-deepfake-pencatut-presiden-prabowo)
+- Malaysian leaders deepfake scams: AI Incident Database · [incidentdatabase.ai/entities/anwar-ibrahim](https://incidentdatabase.ai/entities/anwar-ibrahim/) · Bernama (Bukit Aman CCID) · [web11.bernama.com/en/crime_courts/news.php?id=2401443](https://web11.bernama.com/en/crime_courts/news.php?id=2401443)
+- AIFA chatbot launch (03-8688 7997): Bernama · [bernama.com/en/news.php?id=2387383](https://www.bernama.com/en/news.php?id=2387383)
+- NSRC 997 (24-hour, Mar 2026): malaysia.gov.my · [malaysia.gov.my/en/topics/nsrc-997-hotline](https://www.malaysia.gov.my/en/topics/nsrc-997-hotline)
+- OJK Anti-Scam Centre (iasc.ojk.go.id): [iasc.ojk.go.id](https://iasc.ojk.go.id)
+- Komdigi Aduan Konten portal: [aduankonten.id](https://aduankonten.id)
+- Hook A, RM100 SARA via MyKad (31 Aug–31 Dec 2025): The Vibes · [thevibes.com/articles/news/112204](https://www.thevibes.com/articles/news/112204/rm100-sara-aid-via-mykad-begins-nationwide-distribution)
 - Hook B, Sri Mulyani deepfake: Republika · [ekonomi.republika.co.id/berita/t18wf6409](https://ekonomi.republika.co.id/berita/t18wf6409/sri-mulyani-bantah-sebut-guru-beban-negara-cap-video-viral-hoaks-hasil-deepfake)
 - Hook C, JPJ AI video: Utusan Melayu Plus · [utusanmelayuplus.com/jpj-nafi-video-kononnya-petugas-bergaduh...](https://utusanmelayuplus.com/jpj-nafi-video-kononnya-petugas-bergaduh-dengan-pelanggan-dipercayai-dijana-ai/)
-- Hook D, coin-hoarding AI image: Kompas Cek Fakta · [kompas.com/cekfakta/read/2026/03/02/113300182](https://www.kompas.com/cekfakta/read/2026/03/02/113300182/-hoaks-foto-pria-ditangkap-polisi-karena-timbun-uang-koin)
-- Arup deepfake case: <span class="text-pause">TODO: add source link</span>
+- Hook D, coin-hoarding AI image (TruthScan 97%, #ceritafiksi): Kompas Cek Fakta · [kompas.com/cekfakta/read/2026/03/02/113300182](https://www.kompas.com/cekfakta/read/2026/03/02/113300182/-hoaks-foto-pria-ditangkap-polisi-karena-timbun-uang-koin)
+- Arup Hong Kong US$25M deepfake video call (Feb 2024): CNN via ABC17 · [abc17news.com/money/cnn-business-consumer/2024/05/16/british-engineering-giant-arup-revealed-as-25-million-deepfake-scam-victim](https://abc17news.com/money/cnn-business-consumer/2024/05/16/british-engineering-giant-arup-revealed-as-25-million-deepfake-scam-victim/) · Construction Briefing · [constructionbriefing.com/news/arup-employee-falls-victim-to-us-25-million-deepfake-video-call-scam/8037338.article](https://www.constructionbriefing.com/news/arup-employee-falls-victim-to-us-25-million-deepfake-video-call-scam/8037338.article)
+- Illusory truth effect: Hasher, Goldstein & Toppino (1977), *J. Verbal Learning and Verbal Behavior* · summary · [en.wikipedia.org/wiki/Illusory_truth_effect](https://en.wikipedia.org/wiki/Illusory_truth_effect)
 
 </div>
 
@@ -790,7 +846,10 @@ I'd love to take your questions. Remote friends: drop them in the chat, and [mod
 
 If asked "where's this from?": every number and example in the talk is listed here.
 
-TODO: add a source link for the Arup Hong Kong case.
+Pre-talk verification checklist:
+1. Click Hook B's "Real speech ▶" link (youtube Zh02Lzk6px8). If broken, swap for the current ITB channel URL.
+2. Send "hai" to Kalimasada (+62 859-2160-0500). If no reply, drop that cell from the tools slide.
+3. Open AIFA on WhatsApp at 03-8688 7997. If no reply, note it.
 -->
 
 <style>

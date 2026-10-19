@@ -7,3 +7,4 @@ dist
 components.d.ts
 exports
 _site
+.playwright-mcp
