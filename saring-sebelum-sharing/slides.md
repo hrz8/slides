@@ -756,7 +756,7 @@ layout: center
 # One forward that helps <span class="i-twemoji-family"></span>
 
 <div class="card card-pause !text-2xl mt-4 mx-auto max-w-3xl text-center">
-  <b>Do it today:</b> save <b>AIFA</b> (<span class="i-twemoji-flag-malaysia"></span>) or <b>Kalimasada / turnbackhoax.id</b> (<span class="i-twemoji-flag-indonesia"></span>) and send it to your family group.
+  <b>Do it today:</b> save <b>AIFA</b> (<span class="i-twemoji-flag-malaysia"></span>) or <b>Kalimasada (+62 859-2160-0500) / turnbackhoax.id</b> (<span class="i-twemoji-flag-indonesia"></span>) and send it to your family group.
 </div>
 
 <p class="mt-8 text-center text-xl text-muted">The one forward you can send without checking first.</p>
