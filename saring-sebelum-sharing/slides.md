@@ -98,10 +98,10 @@ clicks: 0
 # Real or fake?
 
 <div class="grid grid-cols-4 gap-4 mt-4 h-80">
-  <FlipCard label="Every Malaysian adult gets RM100 credited to their MyKad. No application needed." kind="A · Headline" flag="my" verdict="REAL" image="/assets/hoax/my-sara-photo.jpg" view-href="https://www.thevibes.com/articles/news/112204/rm100-sara-aid-via-mykad-begins-nationwide-distribution" />
-  <FlipCard label="Finance Minister Sri Mulyani: “guru itu beban negara” (teachers are a burden on the state)" kind="B · Video" flag="id" verdict="FAKE" image="/assets/hoax/id-srimulyani-video.jpg" view-href="/assets/hoax/id-srimulyani-viral.mp4" extra-href="https://www.youtube.com/watch?v=Zh02Lzk6px8" extra-label="Real speech ▶" />
-  <FlipCard label="TikTok: customer rages at JPJ, “only 1 counter open, staff still on break!”" kind="C · Video" flag="my" verdict="FAKE" image="/assets/hoax/my-jpj-tiktok.jpg" :image-blur="3.5" play />
-  <FlipCard label="“KISAH NYATA: man arrested for hoarding coins in water gallons”" kind="D · Image" flag="id" verdict="FAKE" image="/assets/hoax/id-koin-ai.png" view-href="https://www.lpkapnews.com/2026/02/nimbun-uang-koin-di-galon-air-pria-ini.html" />
+  <FlipCard locked label="Every Malaysian adult gets RM100 credited to their MyKad. No application needed." kind="A · Headline" flag="my" verdict="REAL" image="/assets/hoax/my-sara-photo.jpg" view-href="https://www.thevibes.com/articles/news/112204/rm100-sara-aid-via-mykad-begins-nationwide-distribution" />
+  <FlipCard locked label="Finance Minister Sri Mulyani: “guru itu beban negara” (teachers are a burden on the state)" kind="B · Video" flag="id" verdict="FAKE" image="/assets/hoax/id-srimulyani-video.jpg" view-href="/assets/hoax/id-srimulyani-viral.mp4" extra-href="https://www.youtube.com/watch?v=Zh02Lzk6px8" extra-label="Real speech ▶" />
+  <FlipCard locked label="TikTok: customer rages at JPJ, “only 1 counter open, staff still on break!”" kind="C · Video" flag="my" verdict="FAKE" image="/assets/hoax/my-jpj-tiktok.jpg" :image-blur="3.5" play />
+  <FlipCard locked label="“KISAH NYATA: man arrested for hoarding coins in water gallons”" kind="D · Image" flag="id" verdict="FAKE" image="/assets/hoax/id-koin-ai.png" view-href="https://www.lpkapnews.com/2026/02/nimbun-uang-koin-di-galon-air-pria-ini.html" />
 </div>
 
 <p class="mt-4 text-center text-muted">Pick A, B, C, D: which ones are <span class="text-real">real</span>?</p>
@@ -119,29 +119,7 @@ Okay, four items. Look carefully.
 
 **D, Indonesia.** "Kisah nyata", a true story: a man arrested by police for hoarding coins in water gallons. There's even a photo.
 
-So: which of these are **real**? Don't tell me yet. Next slide.
--->
-
----
-layout: center
----
-
-# Cast your vote <span class="i-twemoji-backhand-index-pointing-down"></span>
-
-<div class="h-80 mt-4 w-200">
-  <PollEmbed url="POLL_URL_HERE" title="Real or fake? A · B · C · D" />
-</div>
-
-<!--
-**⏱ 1:15 → 1:45 · 30 sec** · *TODO: paste the poll URL into PollEmbed first. If the venue Wi-Fi blocks the iframe, the QR + link still work.*
-
-Vote now! Office: scan the QR code with your phone. Remote friends: the link is in the chat. *(paste the link into the chat now)*
-
-Pick every one you think is **real**. You've got about twenty seconds.
-
-*(While people vote:)* I'll give you a hint: at least one of them is real. Maybe more. Maybe less. *(smile)*
-
-*(Glance at results)* Ooh, interesting. Some very confident people here. Let's find out.
+So: which of these are **real**? Keep your answer in your head. Let's see.
 -->
 
 ---
@@ -164,7 +142,7 @@ clicks: 5
 <button v-if="['slide', 'presenter'].includes($renderContext)" class="skip-btn" title="Jump to the next slide without flipping the cards" @click.stop="$nav.nextSlide()">Skip reveal <span class="i-carbon-skip-forward-filled"></span></button>
 
 <!--
-**⏱ 1:45 → 2:15 · 30 sec** · *Arrow key / clicker flips one card per click. Short on time? "Skip reveal" (top-right) jumps to the next slide.*
+**⏱ 1:15 → 2:15 · 1 min** · *Arrow key / clicker flips one card per click. Short on time? "Skip reveal" (top-right) jumps to the next slide.*
 
 Let's see how you did. Card A, the RM100…
 
@@ -694,25 +672,16 @@ When someone in the family group shares a hoax: correct them **privately**, not 
 layout: center
 ---
 
-# Round 2: try again <span class="i-twemoji-person-raising-hand"></span>
+# Do it today <span class="i-twemoji-family"></span>
 
-<div class="grid grid-cols-[1fr_auto] gap-10 items-center mt-4">
-  <div>
-    <p class="!text-xl text-muted">New items: let's see if the toolkit helps.</p>
-    <div class="placeholder h-40 mt-4">[PLACEHOLDER: closing poll items — TODO]</div>
-    <div class="mt-6 card card-pause !text-xl">
-      <b>Do it today:</b> save <b>AIFA</b> / <b>turnbackhoax.id</b> and send it to your family group <span class="i-twemoji-family"></span>
-    </div>
-  </div>
-  <PollEmbed url="POLL_URL_HERE" title="Round 2" qr-only />
+<div class="mt-6 card card-pause !text-2xl">
+  Save <b>AIFA</b> / <b>turnbackhoax.id</b> and send it to your family group <span class="i-twemoji-family"></span>
 </div>
 
 <!--
-**⏱ 14:00 → 14:15 · 15 sec** · *TODO: closing-poll items (different from round 1). Results can show during Q&A.*
+**⏱ 14:00 → 14:15 · 15 sec**
 
-Now: round two! New items, same poll link. Let's see if the toolkit helps. Vote now and I'll show the results during Q&A.
-
-And one homework for today. *(point at the yellow box)* Save **AIFA** or **turnbackhoax.id** on your phone, and send it to your family group **today**. That's the one forward that actually helps.
+One homework for today. *(point at the yellow box)* Save **AIFA** or **turnbackhoax.id** on your phone, and send it to your family group **today**. That's the one forward that actually helps.
 -->
 
 ---
@@ -762,8 +731,6 @@ Terima kasih, everyone! *(Works in both countries, by the way.)*
 Saring sebelum sharing.
 
 I'd love to take your questions. Remote friends: drop them in the chat, and [moderator] will read them out.
-
-*(Switch to the round-2 poll results if they're ready: "Look, we improved!")*
 -->
 
 ---

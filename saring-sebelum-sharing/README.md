@@ -89,7 +89,6 @@ components/
   FlipCard.vue          # REAL / FAKE flip card (driven by :flipped="$clicks >= n")
   CountUp.vue           # animated stat counter (final value in print/export)
   ScamPattern.vue       # Famous face + Free money + WhatsApp = SCAM (step = $clicks)
-  PollEmbed.vue         # Slido/Mentimeter iframe + QR fallback
 styles/index.css        # theme: colors (fake red / real green / pause amber), type, layout
 setup/mermaid.ts        # Mermaid dark theme
 public/assets/          # photos (Unsplash License), screenshots/, CREDITS.md
@@ -101,8 +100,6 @@ netlify.toml, vercel.json       # per-deck deploy config
 
 Search `slides.md` for `TODO` and `PLACEHOLDER`:
 
-- Poll URL: replace `POLL_URL_HERE` (opening + closing poll)
-- Closing-poll items
 - Confirm the Indonesian WhatsApp fact-check channel (tools table)
 - Source link for the Arup case (Sources slide)
 
