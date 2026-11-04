@@ -23,6 +23,8 @@ const props = withDefaults(defineProps<{
   extraLabel?: string
   // Driven by slide clicks so presenter + audience windows stay in sync
   flipped?: boolean
+  // Disable click-to-flip (question slide must not leak the answer)
+  locked?: boolean
 }>(), {
   reason: '',
   kind: '',
@@ -45,7 +47,7 @@ const isReal = computed(() => props.verdict === 'REAL')
 </script>
 
 <template>
-  <div class="flip-card" :class="{ flipped: isFlipped }" @click="manual = !manual">
+  <div class="flip-card" :class="{ flipped: isFlipped, locked }" @click="locked || (manual = !manual)">
     <div class="flip-inner">
       <div class="face front">
         <div class="flex items-center justify-between w-full text-sm opacity-80">
@@ -89,6 +91,9 @@ const isReal = computed(() => props.verdict === 'REAL')
   cursor: pointer;
   height: 100%;
   min-height: 15rem;
+}
+.flip-card.locked {
+  cursor: default;
 }
 .flip-inner {
   position: relative;
