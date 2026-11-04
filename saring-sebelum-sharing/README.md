@@ -89,7 +89,6 @@ components/
   FlipCard.vue          # REAL / FAKE flip card (driven by :flipped="$clicks >= n")
   CountUp.vue           # animated stat counter (final value in print/export)
   ScamPattern.vue       # Famous face + Free money + WhatsApp = SCAM (step = $clicks)
-  PollEmbed.vue         # Slido/Mentimeter iframe + QR fallback
 styles/index.css        # theme: colors (fake red / real green / pause amber), type, layout
 setup/mermaid.ts        # Mermaid dark theme
 public/assets/          # photos (Unsplash License), screenshots/, CREDITS.md
@@ -99,9 +98,8 @@ netlify.toml, vercel.json       # per-deck deploy config
 
 ## Before the talk: fill the TODOs
 
-Search `slides.md` for `TODO` and `POLL_URL_HERE`:
+Search `slides.md` for `TODO`:
 
-- **Poll URL** (slide "Cast your vote"): replace `POLL_URL_HERE` with your Slido event link. See [SLIDO-SETUP.md](./SLIDO-SETUP.md) for a step-by-step walkthrough from zero.
 - **Family-group hoax story** (slide "Drop the weirdest hoax"): the presenter note has a placeholder for your own one-line hoax story, used only if the room goes quiet.
 - **Live-tool spot-checks** (do these the day before):
   - Click Hook B's "Real speech ▶" link (YouTube `Zh02Lzk6px8`). If broken, swap for the current ITB channel URL.
